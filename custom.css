@@ -369,7 +369,7 @@
   font-family: "Roboto-Regular";
   font-size: 18px;
   color: #46788f;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 }
 
 .tituloSecundarioDesc{
@@ -774,15 +774,14 @@ span.Attribute{
 
 #FILTRO #vTRAMITETIPO{
   width: 60%;
-  margin: 16px 0;
+  margin: 0 0 16px 0;
 }
 
 /*==========================================TABLAS BANDEJA PRINCIPAL===============================================*/
 
 #GRIDS{
   margin-top: 20px;
-  /*opacity: 0.5;*/
-
+  background: #fffaf2;
 }
 
 /*==============================================CUSTOM MEDIA QUERIES=======================================================*/
