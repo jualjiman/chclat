@@ -357,6 +357,16 @@
 
 /*=========================================================================================================CHICOS NUEVOS==================*/
 /*================================================================GENERALES INICIOS======================================================================================*/
+.left-navbar{
+  background: #dedad3;
+  border-right: solid 1px #d1cdc7;
+  position: fixed;
+  bottom: 0;
+  top: 50px;
+  z-index: 2;
+  overflow: auto;
+}
+
 .tituloPrincipal{
   font-family: "Roboto-Bold";
   font-size: 24px;
@@ -719,7 +729,6 @@ span.Attribute{
 
 #FILTRO{
   background: #dedad3;
-  /*opacity: 0.5;*/
   border-right: solid 1px #d1cdc7;
   position: fixed;
   bottom: 0;
