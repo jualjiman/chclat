@@ -156,11 +156,12 @@
   overflow: auto;
   opacity: 1;
   display: block;
-  transition: all 0.3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .sidebar-hidden {
   opacity: 0 !important;
+  display: none;
 }
 
 .sidebar-right > div > .sub-header {
@@ -383,6 +384,13 @@
 .tituloSecundario{
   font-family: "Roboto-Regular";
   font-size: 18px;
+  color: #46788f;
+  margin-bottom: 16px;
+}
+
+.tituloAuxiliar{
+  font-family: "Roboto-Medium";
+  font-size: 14px;
   color: #46788f;
   margin-bottom: 16px;
 }
