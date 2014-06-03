@@ -837,6 +837,8 @@ span.Attribute{
 }
 
 /*=======================================================Custom Gio==============================================================*/
+
+/*=============================Sidebar Left=============================================*/
 #INSCRIPCION{
   margin: 20px auto;
 }
@@ -858,6 +860,14 @@ span.Attribute{
 }
 #INSCRIPCION #W0007TBCOMENTARIOS{
  font-size: 24px !important;
-  font-family: "Roboto-Bold";
-  color: #25556b !important; 
+ font-family: "Roboto-Bold";
+ color: #25556b !important; 
+}
+/*====================================Contenido=============================*/
+#SECCION{
+  display: block;
+}
+#SECCION ul li{
+  display: inline-block;
+  margin: 0 10px;
 }
