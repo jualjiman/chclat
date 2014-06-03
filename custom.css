@@ -357,7 +357,7 @@
 
 /*=========================================================================================================CHICOS NUEVOS==================*/
 /*================================================================GENERALES INICIOS======================================================================================*/
-.left-navbar{
+#FILTRO{
   background: #dedad3;
   border-right: solid 1px #d1cdc7;
   position: fixed;
@@ -367,7 +367,7 @@
   overflow: auto;
 }
 
-.content{
+#GRIDS{
   margin-top: 20px;
   background: #fffaf2;
 }
@@ -744,16 +744,6 @@ span.Attribute{
 
 /*=============================================================BANDEJA PRINCIPAL=================================================================================*/
 
-#FILTRO{
-  background: #dedad3;
-  border-right: solid 1px #d1cdc7;
-  position: fixed;
-  bottom: 0;
-  top: 50px;
-  z-index: 2;
-  overflow: auto;
-}
-
 #FILTRO  #span_vTRAMITETIPO{
   margin: 0;
   padding:0;
@@ -801,13 +791,6 @@ span.Attribute{
 #FILTRO #vTRAMITETIPO{
   width: 60%;
   margin: 0 0 16px 0;
-}
-
-/*==========================================TABLAS BANDEJA PRINCIPAL===============================================*/
-
-#GRIDS{
-  margin-top: 20px;
-  background: #fffaf2;
 }
 
 /*==============================================CUSTOM MEDIA QUERIES=======================================================*/
