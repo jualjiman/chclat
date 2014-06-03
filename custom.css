@@ -478,6 +478,11 @@ select.selectPersonalizado{
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.btnlg{
+  width: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .btn-success{background: #38c789; }
 .btn-success:hover{background: #2da16f; }
@@ -492,14 +497,14 @@ select.selectPersonalizado{
 .btn-default{
   background: #e7e2da;
   color: #858585;
-  border: solid 2px #858585;
+  border: solid 1px #858585;
   font-family: "Roboto-Medium";
   font-size: 14px;
 }
 .btn-default:hover{
   background: #e7e2da;
   color: #424242;
-  border: solid 2px #424242; 
+  border: solid 1px #424242; 
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
@@ -845,4 +850,14 @@ span.Attribute{
   color: #7a96a3;
   font-family: "Roboto-Regular";
   font-size: 18px;
+}
+#INSCRIPCION #span_W0005INSCRIPCIONFECHAHORA{
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+  color: #424242;
+}
+#INSCRIPCION #W0007TBCOMENTARIOS{
+ font-size: 24px !important;
+  font-family: "Roboto-Bold";
+  color: #25556b !important; 
 }
