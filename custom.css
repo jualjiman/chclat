@@ -393,6 +393,7 @@
   font-size: 14px;
   color: #46788f;
   margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .tituloSecundarioDesc{
@@ -413,6 +414,10 @@ input[type=text]{
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.w100porc{
+  width: 100%;
 }
 
 select.selectPersonalizado{
@@ -459,6 +464,14 @@ select.selectPersonalizado{
 .cajaCampoInlineBlock{
   margin-bottom: 15px;
   display: inline-block;
+}
+
+.difPrim{
+  margin-left: 19px;
+}
+
+.subgrupo{
+  margin-top: 31px;
 }
 
 /*========================BOOTSTRAP=================================*/
