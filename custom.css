@@ -832,3 +832,17 @@ span.Attribute{
 }
 
 /*=======================================================Custom Gio==============================================================*/
+#INSCRIPCION{
+  margin: 20px auto;
+}
+#INSCRIPCION #W0005TEXTBLOCK1{
+  font-size: 24px !important;
+  font-family: "Roboto-Bold";
+  color: #25556b;
+}
+#INSCRIPCION #W0005TEXTBLOCK2,
+#INSCRIPCION #W0005TEXTBLOCK4{
+  color: #7a96a3;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+}
