@@ -416,10 +416,6 @@ input[type=text]{
   padding-right: 5px;
 }
 
-.w100porc{
-  width: 100%;
-}
-
 select.selectPersonalizado{
   height: 30px;
   border-radius: 3px;
@@ -472,6 +468,10 @@ select.selectPersonalizado{
 
 .subgrupo{
   margin-top: 31px;
+}
+
+.w90porc{
+  width: 97%;
 }
 
 /*========================BOOTSTRAP=================================*/
