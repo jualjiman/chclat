@@ -465,8 +465,14 @@ select.selectPersonalizado{
   margin-left: 19px;
 }
 
+.grupo{}
+
 .subgrupo{
   margin-top: 31px;
+}
+
+.subgrupo_campo{
+  margin-top: 26px;
 }
 
 .just-borde-responsive{
@@ -479,7 +485,7 @@ select.selectPersonalizado{
 }
 
 .widthAjustar{
-  width: 97%;
+  width: 96%;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -848,6 +854,9 @@ span.Attribute{
   .subgrupo {/*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
     margin-top: 0;
   }
+  .subgrupo_campo{
+    margin-top: 0;
+  }
 
 }
 
@@ -860,12 +869,6 @@ span.Attribute{
   .just-borde-responsive{ /*margenes separadores, deben separar debajo cuando son resoluciones pequeñas*/
     border: none;
     border-bottom: solid 1px #d9d5ce;
-    margin-right: 15px;
-    margin-bottom: 10px;
-  }
-  
-  .subgrupo { /*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
-    margin-top: 0;
   }
 }
 
