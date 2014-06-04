@@ -877,10 +877,6 @@ span.Attribute{
  color: #25556b !important; 
 }
 /*====================================Contenido=============================*/
-#SECCION{
-  display: block;
-}
-#SECCION ul li{
-  display: inline-block;
-  margin: 0 10px;
-}
+.alinear{
+  width: 200px;
+  margin-top: 15px;
