@@ -370,6 +370,7 @@
 
 #GRIDS{
   margin-top: 20px;
+  background: #fffaf2;
 }
 
 .tituloPrincipal{
@@ -479,7 +480,7 @@ select.selectPersonalizado{
 }
 
 .widthAjustar{
-  width: 97%;
+  width: 97% !important;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -876,7 +877,6 @@ span.Attribute{
   }
 
   .btnSize{
-    width: 90%;
     font-size: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
