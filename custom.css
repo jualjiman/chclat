@@ -383,6 +383,7 @@
 
 #GRIDS{
   margin-top: 20px;
+  background: #fffaf2;
 }
 
 .tituloPrincipal{
@@ -475,16 +476,26 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
+<<<<<<< HEAD
 /*agrega un margen top, para separar un subnivel del grupo principal*/
+=======
+.difPrim{
+  margin-left: 19px;
+}
+
+>>>>>>> 56a0a0a1f2009a8817888c32a6afe667295542ae
 .subgrupo{
   margin-top: 31px;
 }
 
+<<<<<<< HEAD
 /*agrega un margen top para dejar alineado un campo al mismo nivel que los demas*/
 .subgrupo_campo{
   margin-top: 26px;
 }
 
+=======
+>>>>>>> 56a0a0a1f2009a8817888c32a6afe667295542ae
 .just-borde-responsive{
   border: none;
   border-right: solid 1px #d9d5ce;
@@ -497,7 +508,7 @@ select.selectPersonalizado{
 
 /*ajusta el ancho al elemento padre*/
 .widthAjustar{
-  width: 96%;
+  width: 97% !important;
 }
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
@@ -859,9 +870,6 @@ span.Attribute{
   .subgrupo {/*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
     margin-top: 0;
   }
-  .subgrupo_campo{
-    margin-top: 0;
-  }
 
 }
 
@@ -874,6 +882,12 @@ span.Attribute{
   .just-borde-responsive{ /*margenes separadores, deben separar debajo cuando son resoluciones pequeñas*/
     border: none;
     border-bottom: solid 1px #d9d5ce;
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .subgrupo { /*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
+    margin-top: 0;
   }
 }
 
@@ -884,7 +898,6 @@ span.Attribute{
   }
 
   .btnSize{
-    width: 90%;
     font-size: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -930,3 +943,4 @@ span.Attribute{
 .alinear{
   width: 200px;
   margin-top: 15px;
+}
