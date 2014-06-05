@@ -405,6 +405,9 @@
   font-family: "Roboto-Regular";
   font-size: 16px;
   color: #46788f;
+}
+
+.bordeAuxiliar{
   margin-bottom: 16px;
   padding-top: 16px;
   border-top: solid 1px #e0dfdc;
@@ -509,6 +512,8 @@ select.selectPersonalizado{
 .separacionVertical{
   margin-bottom: 31px;
 }
+
+
 
 /*========================BOOTSTRAP=================================*/
 
