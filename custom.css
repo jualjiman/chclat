@@ -485,7 +485,7 @@ select.selectPersonalizado{
 }
 
 .subgrupo{
-  margin-top: 31px;
+  margin-top: 20px;
 }
 
 /*agrega un margen top para dejar alineado un campo al mismo nivel que los demas*/
@@ -513,6 +513,11 @@ select.selectPersonalizado{
   margin-bottom: 31px;
 }
 
+/*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
+.separacionDerecha{
+  margin-right: 31px !important;
+}
+
 
 
 /*========================BOOTSTRAP=================================*/
@@ -524,7 +529,7 @@ select.selectPersonalizado{
   font-size: 14px;
   margin: 0 auto;
   padding: 4px 12px;
-  transition: all 1s ease;
+  transition: background 1s ease;
 }
 
 .btnSize{
@@ -866,10 +871,6 @@ span.Attribute{
     margin-bottom: 10px;
   }
 
-  .subgrupo {/*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
-    margin-top: 0;
-  }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -884,10 +885,6 @@ span.Attribute{
     margin-right: 15px;
     margin-bottom: 10px;
   }
-  
-  .subgrupo { /*los subgrupos en resoluciones pequeñas se deben acomodar al mismo nivel que todos*/
-    margin-top: 0;
-  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -898,8 +895,12 @@ span.Attribute{
 
   .btnSize{
     font-size: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .btFiltro{
+    width: 95%;
   }
 }
 /*====================================================INSCRIPCION CAPTURA RAPIDA START======================================================*/
