@@ -476,26 +476,20 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
-<<<<<<< HEAD
 /*agrega un margen top, para separar un subnivel del grupo principal*/
-=======
 .difPrim{
   margin-left: 19px;
 }
 
->>>>>>> 56a0a0a1f2009a8817888c32a6afe667295542ae
 .subgrupo{
   margin-top: 31px;
 }
 
-<<<<<<< HEAD
 /*agrega un margen top para dejar alineado un campo al mismo nivel que los demas*/
 .subgrupo_campo{
   margin-top: 26px;
 }
 
-=======
->>>>>>> 56a0a0a1f2009a8817888c32a6afe667295542ae
 .just-borde-responsive{
   border: none;
   border-right: solid 1px #d9d5ce;
