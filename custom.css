@@ -111,7 +111,20 @@
   margin: 5px !important;
   height: 40px;
   padding: 0 10px;
+  background: #e7e2da;
+  color: #858585;
+  border-color: #858585;
+  border: solid 1px;
+  font-family: "Roboto-Medium";
+  font-size: 14px;
 }
+
+.navbar-btn:hover{
+  background: #e7e2da;
+  color: #424242;
+  border: solid 1px #424242; 
+}
+
 .rpp-navbar-collapse-1{
   background: red;
 }
@@ -392,7 +405,8 @@
   font-size: 16px;
   color: #46788f;
   margin-bottom: 16px;
-  margin-top: 0;
+  padding-top: 16px;
+  border-top: solid 1px #e0dfdc;
 }
 
 .tituloSecundarioDesc{
@@ -461,16 +475,12 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
-.difPrim{
-  margin-left: 19px;
-}
-
-.grupo{}
-
+/*agrega un margen top, para separar un subnivel del grupo principal*/
 .subgrupo{
   margin-top: 31px;
 }
 
+/*agrega un margen top para dejar alineado un campo al mismo nivel que los demas*/
 .subgrupo_campo{
   margin-top: 26px;
 }
@@ -480,12 +490,19 @@ select.selectPersonalizado{
   border-right: solid 1px #d9d5ce;
 }
 
+/*color de fondo del diseño*/
 .backgroundColor{
   background: #fffaf2;
 }
 
+/*ajusta el ancho al elemento padre*/
 .widthAjustar{
   width: 96%;
+}
+
+/*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
+.separacionVertical{
+  margin-bottom: 31px;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -496,8 +513,8 @@ select.selectPersonalizado{
   font-family: "Roboto-Medium";
   font-size: 14px;
   margin: 0 auto;
+  padding: 4px 12px;
   transition: all 1s ease;
-  border:0;
 }
 
 .btnSize{
@@ -519,19 +536,6 @@ select.selectPersonalizado{
 
 .fondo:hover{
   background: #e7e2da !important;
-}
-
-.btn-default{
-  background: #e7e2da;
-  color: #858585;
-  border: solid 1px #858585;
-  font-family: "Roboto-Medium";
-  font-size: 14px;
-}
-.btn-default:hover{
-  background: #e7e2da;
-  color: #424242;
-  border: solid 1px #424242; 
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
@@ -562,7 +566,8 @@ table.table-striped{
   background: #fffaf2;
 }
 
-.form-control {
+.form-horizontal .control-label {
+  text-align: left;
 }
 
 /*================================================================GENERALES FIN======================================================================================*/
@@ -885,7 +890,15 @@ span.Attribute{
     padding-bottom: 15px;
   }
 }
+/*====================================================INSCRIPCION CAPTURA RAPIDA START======================================================*/
 
+.delimitarGrupo{
+  border:none;
+  border: solid 1px red;
+  margin-bottom: 10px;
+}
+
+/*====================================================INSCRIPCION CAPTURA RAPIDA END======================================================*/
 /*=======================================================Custom Gio==============================================================*/
 
 /*=============================Sidebar Left=============================================*/
