@@ -388,7 +388,7 @@
 
 .tituloPrincipal{
   font-family: "Roboto-Bold";
-  font-size: 24px;
+  font-size: 24px !important;
   color: #25556b;
   margin-top: 24px;
   margin-bottom: 20px;
@@ -490,7 +490,7 @@ select.selectPersonalizado{
 
 /*agrega un margen top para dejar alineado un campo al mismo nivel que los demas*/
 .subgrupo_campo{
-  margin-top: 26px;
+  margin-top: 26px !important;
 }
 
 .just-borde-responsive{
@@ -510,7 +510,7 @@ select.selectPersonalizado{
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionVertical{
-  margin-bottom: 31px;
+  margin-bottom: 31px !important;
 }
 
 
@@ -913,33 +913,11 @@ span.Attribute{
 /*====================================================INSCRIPCION CAPTURA RAPIDA END======================================================*/
 /*=======================================================Custom Gio==============================================================*/
 
-/*=============================Sidebar Left=============================================*/
-#INSCRIPCION{
-  margin: 20px auto;
-}
-#INSCRIPCION #W0005TEXTBLOCK1{
-  font-size: 24px !important;
-  font-family: "Roboto-Bold";
-  color: #25556b;
-}
-#INSCRIPCION #W0005TEXTBLOCK2,
-#INSCRIPCION #W0005TEXTBLOCK4{
-  color: #7a96a3;
-  font-family: "Roboto-Regular";
-  font-size: 18px;
-}
-#INSCRIPCION #span_W0005INSCRIPCIONFECHAHORA{
-  font-family: "Roboto-Medium";
-  font-size: 18px;
-  color: #424242;
-}
-#INSCRIPCION #W0007TBCOMENTARIOS{
- font-size: 24px !important;
- font-family: "Roboto-Bold";
- color: #25556b !important; 
-}
 /*====================================Contenido=============================*/
 .alinear{
   width: 200px;
   margin-top: 15px;
+}
+.mas{
+  background: url(../GeneXusXEv2/cruz.png) no-repeat #3884bf;
 }
