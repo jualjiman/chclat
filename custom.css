@@ -413,6 +413,14 @@
   border-top: solid 1px #e0dfdc;
 }
 
+.bordeAuxiliarFiltro{
+  margin-bottom: 16px;
+  padding-top: 16px;
+  border-top: solid 1px #c4c1bb;;
+}
+
+
+
 .tituloSecundarioDesc{
   margin: 0;
   padding:0;
@@ -505,7 +513,7 @@ select.selectPersonalizado{
 
 /*ajusta el ancho al elemento padre*/
 .widthAjustar{
-  width: 97% !important;
+  width: 100% !important;
 }
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
@@ -515,7 +523,7 @@ select.selectPersonalizado{
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionDerecha{
-  margin-right: 31px !important;
+  margin-right: 15px !important;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -546,6 +554,10 @@ select.selectPersonalizado{
 
 .btn-primary{background: #3884bf; }
 .btn-primary:hover{background: #236598; }
+
+.btn-default:focus{
+  background: inherit;
+}
 
 .fondo:hover{
   background: #e7e2da !important;
@@ -641,6 +653,14 @@ span.Attribute{
   background: inherit;  
 }
 .Table{width: 100%;}
+
+.Attribute, .ImageAttribute, .ReadonlyImageAttribute, .VideoAttribute, .ReadonlyVideoAttribute, .AudioAttribute, .ReadonlyAudioAttribute, .ErrorAttribute, .WarningAttribute, .ReadonlyAttribute,
+.ReadonlyMedio, .BlobContentReadonlyMedio, .ReadonlyBlobContentReadonlyMedio, .BlobInputReadonlyMedio, .ReadonlyReadonlyMedio, .BlobContentAttribute, .ReadonlyBlobContentAttribute, .BlobInputAttribute, .AttributeDragging, .AttributeAcceptDrag, .AttributeNoAcceptDrag, .AttSubTitle, .BlobInputAttSubTitle, .BlobContentAttSubTitle, .ReadonlyBlobContentAttSubTitle, .ReadonlyAttSubTitle, .CheckBox, .BlobContentCheckBox, 
+.ReadonlyBlobContentCheckBox, .BlobInputCheckBox, .ReadonlyCheckBox, .ComboxW200, .BlobContentComboxW200, .ReadonlyBlobContentComboxW200, .BlobInputComboxW200, .ReadonlyComboxW200,
+.TextBlock, .TextBlockDragging, .TextBlockAcceptDrag, .TextBlockNoAcceptDrag, .Title, .SubTitle, .Label, .SmallText, .TextBlockHeader, .RecentLink, .Separator, .FooterText, .RecentLinkItem, 
+.VerticalMenuOption, .TextBlockBotonImprimir, .TextBlockNew{
+  font-family: "Roboto-Regular"; 
+}
 
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
 
@@ -862,13 +882,11 @@ span.Attribute{
     width: 50%;
   }
 
-  .just-borde-responsive{ /*margenes separadores, deben separar debajo cuando son resoluciones pequeñas*/
-    border: none;
-    border-bottom: solid 1px #d9d5ce;
-    margin-right: 15px;
-    margin-bottom: 10px;
+  .btnSize{
+    font-size: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
-
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -877,11 +895,9 @@ span.Attribute{
     width: 50%;
   }
 
-  .just-borde-responsive{ /*margenes separadores, deben separar debajo cuando son resoluciones pequeñas*/
-    border: none;
-    border-bottom: solid 1px #d9d5ce;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    .btnSize{
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
