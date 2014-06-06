@@ -518,8 +518,6 @@ select.selectPersonalizado{
   margin-right: 31px !important;
 }
 
-
-
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -898,10 +896,10 @@ span.Attribute{
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
 
-  .btFiltro{
+.btFiltro{
     width: 95%;
-  }
 }
 
 /*=======================================================Custom Gio==============================================================*/
