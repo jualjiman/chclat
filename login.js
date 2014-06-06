@@ -6,7 +6,7 @@ $(function(){
 	$(".ErrorV").css("display","none");
 
 	$("#LOGIN_FORM input[type='button']").on("click",function(){
-		$(".ErrorV").fadeIn();
+		soloCuandoHayTexto();
 	});
 
 	$("#LOGIN_FORM .otro a").on("click",function(){
@@ -29,8 +29,15 @@ $(function(){
 	function esperandoEnter(e){
 		var code = e.keyCode || e.which;
 		if(code == 13) {
-	   		$(".ErrorV").fadeIn();
+	   		soloCuandoHayTexto();
 	 	}
+	}
+
+	function soloCuandoHayTexto(){
+		var texto = $("#gxErrorViewer div").html();
+		if(texto !== ""){
+			$(".ErrorV").fadeIn();
+		}
 	}
 
 });
