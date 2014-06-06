@@ -7,7 +7,6 @@ $(function(){
 			$("#GRIDS").removeClass("col-xs-offset-4");
 			$("#GRIDS").removeClass("col-md-10");
 			$("#GRIDS").addClass("col-md-12");
-
 			$("#FILTRO").fadeOut();
 			visible = 1;
 		}
