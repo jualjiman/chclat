@@ -925,6 +925,11 @@ span.Attribute{
   width: 200px;
   margin-top: 15px;
 }
-.mas{
+.btn-add{
   background: url(../GeneXusXEv2/cruz.png) no-repeat #3884bf;
+  background-position: center;
+}
+.btn-add:hover{
+  background: url(../GeneXusXEv2/cruz.png) no-repeat #236598;
+  background-position: center;
 }
