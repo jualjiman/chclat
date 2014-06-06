@@ -16,6 +16,7 @@
 }
 
 .calendar table {
+  border-radius: 3px;
   width: 200px;
   height: 213px;
   border: 1px solid;
@@ -95,12 +96,14 @@
 }
 
 .calendar tbody .rowhilite td {
-  background: Highlight;
-  color: HighlightText;
+  /*background: Highlight;
+  color: HighlightText;*/
 }
 
 .calendar tbody td.hilite { /* Hovered cells <TD> */
-  
+  background: #C7C7C7;
+  color: white;
+  border-radius: 5px;
 }
 
 .calendar tbody td.active { /* Active (pressed) cells <TD> */
@@ -155,6 +158,7 @@
   border-top: 1px solid #f3f3f3;
   color: #8D8D8D;
   text-align: center;
+  border-radius: 3px;
 }
 
 .calendar tfoot .hilite { /* Hover style for buttons in footer */
@@ -249,4 +253,13 @@
   border-color: #f00;
   background-color: #000;
   color: #0f0;
+}
+
+/*====================================================================================================*/
+thead tr:first-of-type td:first-of-type{
+  border-top-left-radius: 2px;
+}
+
+thead tr:first-of-type td:last-of-type{
+  border-top-right-radius: 2px;
 }

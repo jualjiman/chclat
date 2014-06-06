@@ -38,6 +38,10 @@ $(function(){
 		if(texto !== ""){
 			$(".ErrorV").fadeIn();
 		}
+		else{
+			$(".ErrorV").hide();
+		}
+		console.log(texto);
 	}
 
 });
