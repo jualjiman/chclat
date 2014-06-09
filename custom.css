@@ -530,6 +530,14 @@ select.selectPersonalizado{
   margin-right: 15px !important;
 }
 
+.upper{
+  text-transform: uppercase;
+}
+
+.lower{
+  text-transform: lowercase;
+}
+
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -553,11 +561,24 @@ select.selectPersonalizado{
   padding-bottom: 15px;
 }
 
-.btn-success{background: #38c789; }
-.btn-success:hover{background: #2da16f; }
+.btn-success{
+  background: #38c789; 
+  border-color:#2da16f;
+}
+.btn-success:hover{
+  background: #2da16f;
+  border-color: #227a54;
+}
 
-.btn-primary{background: #3884bf; }
-.btn-primary:hover{background: #236598; }
+.btn-primary{
+  background: #3884bf; 
+  border-color: #2c6a99;
+}
+.btn-primary:hover{
+  background: #2c6a99; 
+  border-color:#214f73;
+  
+}
 
 .btn-default:focus{
   background: inherit;
