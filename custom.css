@@ -516,6 +516,10 @@ select.selectPersonalizado{
   width: 100% !important;
 }
 
+.widthAjustarCal{ /*AJUSTAR AL ANCHO DEL ELEMENTO PADRE PARA CALENDARIOS*/
+  width: 93% !important;
+}
+
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionVertical{
   margin-bottom: 31px !important;
