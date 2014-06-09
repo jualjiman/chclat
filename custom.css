@@ -948,11 +948,15 @@ span.Attribute{
 /*====================================Contenido=============================*/
 .alinear{
   width: 200px;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .btn-add{
   background: url(../GeneXusXEv2/cruz.png) no-repeat #3884bf;
   background-position: center;
+  text-align: center;
+  font-size: 8px;
+  width: 24px;
+  height: 24px;
 }
 .btn-add:hover{
   background: url(../GeneXusXEv2/cruz.png) no-repeat #236598;
