@@ -136,6 +136,12 @@
   border: solid 1px #c0c8cc; 
 }
 
+.navbar-btn:focus{
+  background: inherit !important;
+  color: #c0c8cc;
+  border: solid 1px #c0c8cc; 
+}
+
 .rpp-navbar-collapse-1{
   background: red;
 }
@@ -292,15 +298,14 @@
 /* Pop-up */
 
 .PopupBorder {
-  width: 485px !important;
-  height: 427px !important;
+  background: #fffaf2;
   padding: 0 !important;
-  border-radius: 6px 6px 0 0;
-  background-color: #fff;
+  border-radius: 6px;
   border: 1px solid #bbb;
   outline: none;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+  z-index: 1030 !important;
 }
 
 .PopupHeader {
@@ -401,6 +406,7 @@
   background: #fffaf2;
 }
 
+/*siempre en un h1*/
 .tituloPrincipal{
   font-family: "Roboto-Bold";
   font-size: 24px !important;
@@ -416,6 +422,7 @@
   margin-bottom: 16px;
 }
 
+/*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
 .tituloAuxiliar{
   font-family: "Roboto-Regular";
   font-size: 16px;
@@ -452,11 +459,18 @@ input[type=text]{
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
+  border: solid 1px #e6e4e1;
+}
+
+textarea{
+  border-radius: 3px;
+  border: solid 1px #e6e4e1 !important;
 }
 
 select.selectPersonalizado{
   height: 30px;
   border-radius: 3px;
+  border: solid 1px #e6e4e1;
 }
 
 .ErrorV{
@@ -555,7 +569,7 @@ select.selectPersonalizado{
 
 /*margen interior para los controles de ventanas modales*/
 .vmodal{
-  padding: 20px;
+  padding: 20px 10 20px 20px;
 }
 
 
@@ -567,7 +581,7 @@ select.selectPersonalizado{
 
 /*estilos para boton de ventana modal*/
 .btn-vmodal{ 
-  border-radius: 0; 
+  /*border-radius: 0; */
   width: 70px !important;
   border: none;
 }
@@ -582,6 +596,7 @@ select.selectPersonalizado{
   margin: 0 auto;
   padding: 4px 12px;
   transition: background 1s ease, color 1s ease, border-color 1s ease;
+  outline-color: transparent !important;
 }
 
 .btnSize{
@@ -614,13 +629,11 @@ select.selectPersonalizado{
   
 }
 
-.btn-default:focus{
-  background: inherit;
-}
-
 .fondo:hover{
   background: inherit;
 }
+
+td,th{padding:1px}
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
   background: #faf5ed;
@@ -652,6 +665,11 @@ table.table-striped{
 
 .form-horizontal .control-label {
   text-align: left;
+}
+
+#gxErrorViewer div{
+  color: red;
+  padding: 20px 20px 0 20px;
 }
 
 /*================================================================GENERALES FIN======================================================================================*/
@@ -719,6 +737,10 @@ span.Attribute{
 .TextBlock, .TextBlockDragging, .TextBlockAcceptDrag, .TextBlockNoAcceptDrag, .Title, .SubTitle, .Label, .SmallText, .TextBlockHeader, .RecentLink, .Separator, .FooterText, .RecentLinkItem, 
 .VerticalMenuOption, .TextBlockBotonImprimir, .TextBlockNew{
   font-family: "Roboto-Regular"; 
+}
+
+.Grid{
+  background: inherit;
 }
 
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
