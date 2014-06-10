@@ -136,6 +136,12 @@
   border: solid 1px #c0c8cc; 
 }
 
+.navbar-btn:focus{
+  background: inherit !important;
+  color: #c0c8cc;
+  border: solid 1px #c0c8cc; 
+}
+
 .rpp-navbar-collapse-1{
   background: red;
 }
@@ -292,11 +298,9 @@
 /* Pop-up */
 
 .PopupBorder {
-  width: 485px !important;
-  height: 427px !important;
+  background: #fffaf2;
   padding: 0 !important;
-  border-radius: 6px 6px 0 0;
-  background-color: #fff;
+  border-radius: 6px;
   border: 1px solid #bbb;
   outline: none;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
@@ -555,7 +559,7 @@ select.selectPersonalizado{
 
 /*margen interior para los controles de ventanas modales*/
 .vmodal{
-  padding: 20px;
+  padding: 20px 10 20px 20px;
 }
 
 
@@ -567,7 +571,7 @@ select.selectPersonalizado{
 
 /*estilos para boton de ventana modal*/
 .btn-vmodal{ 
-  border-radius: 0; 
+  /*border-radius: 0; */
   width: 70px !important;
   border: none;
 }
@@ -582,6 +586,7 @@ select.selectPersonalizado{
   margin: 0 auto;
   padding: 4px 12px;
   transition: background 1s ease, color 1s ease, border-color 1s ease;
+  outline-color: transparent !important;
 }
 
 .btnSize{
@@ -612,10 +617,6 @@ select.selectPersonalizado{
   background: #2c6a99; 
   border-color:#214f73;
   
-}
-
-.btn-default:focus{
-  background: inherit;
 }
 
 .fondo:hover{
