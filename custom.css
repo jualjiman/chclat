@@ -75,12 +75,13 @@
 
 .navbar {
   margin-bottom: 10px;
-  background: #e7e2da;
+  background: #595754;
   font-family: "Roboto-Medium";
   font-size: 14px;
   height: 50px;
   border-bottom: solid 1px #cfcac2;
 }
+
 .ligthbox{
   opacity: 0.5;
 }
@@ -95,14 +96,16 @@
   padding: 5px;
   margin-right: 15px;
 }
-.navbar-default .navbar-nav>li{
+
+.navbar-default .navbar-nav>li>a{
   font-size:  14px;
   font-family: "Roboto-Regular";
-  color: #424242;
+  color: #c0c8cc;
   transition: all 1s ease;
 }
-.navbar-default .navbar-nav>li:hover{
-  background: #dbd6ce;
+.navbar-default .navbar-nav>li>a:hover{
+  background: #4d4b48;
+  color: #9ca2a6;
   font-size:  14px;
   font-family: "Roboto-Medium";
 }
@@ -530,6 +533,14 @@ select.selectPersonalizado{
   margin-right: 15px !important;
 }
 
+.upper{
+  text-transform: uppercase;
+}
+
+.lower{
+  text-transform: lowercase;
+}
+
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -539,7 +550,7 @@ select.selectPersonalizado{
   font-size: 14px;
   margin: 0 auto;
   padding: 4px 12px;
-  transition: background 1s ease;
+  transition: background 1s ease, color 1s ease;
 }
 
 .btnSize{
@@ -553,18 +564,31 @@ select.selectPersonalizado{
   padding-bottom: 15px;
 }
 
-.btn-success{background: #38c789; }
-.btn-success:hover{background: #2da16f; }
+.btn-success{
+  background: #38c789; 
+  border-color:#2da16f;
+}
+.btn-success:hover{
+  background: #2da16f;
+  border-color: #227a54;
+}
 
-.btn-primary{background: #3884bf; }
-.btn-primary:hover{background: #236598; }
+.btn-primary{
+  background: #3884bf; 
+  border-color: #2c6a99;
+}
+.btn-primary:hover{
+  background: #2c6a99; 
+  border-color:#214f73;
+  
+}
 
 .btn-default:focus{
   background: inherit;
 }
 
 .fondo:hover{
-  background: #e7e2da !important;
+  background: inherit;
 }
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
