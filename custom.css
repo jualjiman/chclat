@@ -954,8 +954,8 @@ span.Attribute{
   margin-top: 25px;
 }
 .btn-add{
-  background: url(../GeneXusXEv2/cruz.png) no-repeat #3884bf;
-  background-position: center;
+  /*background: url(../GeneXusXEv2/cruz.png) no-repeat #3884bf;
+  background-position: center;*/
   text-align: center;
   font-size: 14px;
   width: 20px !important;
@@ -963,6 +963,6 @@ span.Attribute{
   padding: 0;
 }
 .btn-add:hover{
-  background: url(../GeneXusXEv2/cruz.png) no-repeat #236598;
-  background-position: center;
+  /*background: url(../GeneXusXEv2/cruz.png) no-repeat #236598;
+  background-position: center;*/
 }
