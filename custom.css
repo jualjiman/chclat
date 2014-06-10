@@ -29,6 +29,14 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+.popup-button-checked {
+  background: url(../fonts/icons/checked.png) no-repeat center #38c789 !important;
+}
+
+.popup-button-cross {
+  background: url(../fonts/icons/cross.png) no-repeat center #3884bf !important;
+}
+
  .Attribute,
  .ImageAttribute,
  .ReadonlyImageAttribute,
@@ -114,18 +122,18 @@
   margin: 5px !important;
   height: 40px;
   padding: 0 10px;
-  background: #e7e2da;
-  color: #858585;
-  border-color: #858585;
+  background: #595754;
+  color: #a8afb3;
+  border-color: #a8afb3;
   border: solid 1px;
   font-family: "Roboto-Medium";
   font-size: 14px;
 }
 
 .navbar-btn:hover{
-  background: #e7e2da;
-  color: #424242;
-  border: solid 1px #424242; 
+  background: #595754;
+  color: #c0c8cc;
+  border: solid 1px #c0c8cc; 
 }
 
 .rpp-navbar-collapse-1{
@@ -284,8 +292,10 @@
 /* Pop-up */
 
 .PopupBorder {
+  width: 485px !important;
+  height: 427px !important;
   padding: 0 !important;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   background-color: #fff;
   border: 1px solid #bbb;
   outline: none;
@@ -299,13 +309,15 @@
   height: 35px !important;
   color: #333;
   border-bottom: 1px solid #e5e5e5;
+  background: #dedad3;
 }
 
 .PopupHeader > .PopupTitle {
   margin: 5px;
   padding: 0 !important;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Roboto-Regular";
   font-weight: 500;
+  color: rgb(117, 117, 117);
 }
 
 .PopupHeaderButton:before {
@@ -422,8 +434,6 @@
   border-top: solid 1px #c4c1bb;;
 }
 
-
-
 .tituloSecundarioDesc{
   margin: 0;
   padding:0;
@@ -533,12 +543,33 @@ select.selectPersonalizado{
   margin-right: 15px !important;
 }
 
+/*convertir mayusculas*/
 .upper{
   text-transform: uppercase;
 }
 
+/*convertir minusculas*/
 .lower{
   text-transform: lowercase;
+}
+
+/*margen interior para los controles de ventanas modales*/
+.vmodal{
+  padding: 20px;
+}
+
+
+/*estilos para boton de ventana modal*/
+.fuentes-iconicas{ 
+  font-family: 'Glyphicons Halflings' !important;
+  font-size: 14px !important;
+}
+
+/*estilos para boton de ventana modal*/
+.btn-vmodal{ 
+  border-radius: 0; 
+  width: 70px !important;
+  border: none;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -550,7 +581,7 @@ select.selectPersonalizado{
   font-size: 14px;
   margin: 0 auto;
   padding: 4px 12px;
-  transition: background 1s ease, color 1s ease;
+  transition: background 1s ease, color 1s ease, border-color 1s ease;
 }
 
 .btnSize{
