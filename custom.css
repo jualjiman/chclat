@@ -81,6 +81,10 @@
   background-color: #fff;
 }
 
+html {
+  background: #fffaf2;
+}
+
 .navbar {
   margin-bottom: 10px;
   background: #595754;
@@ -354,11 +358,13 @@
   display: none;
 }
 
-.PopupContent IFRAME {
+.PopupContent iframe {
   border-radius: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-.PopupBorder IMG {
+.PopupBorder img {
   margin-left: 0;
   padding-bottom: 0;
 }
@@ -473,16 +479,22 @@ select.selectPersonalizado{
   border: solid 1px #e6e4e1;
 }
 
-.ErrorV{
-  display: block;
+.ErrorViewerBullet div{
   background: #ffeccc;
   color: #d19834;
   list-style: none;
-  margin-top: 15px;
-  padding: 10px 5px;
-  width: 100%;
-  font-family: "Roboto-Light";
+  padding: 10px 10px;
+  width: 90%;
+  margin: 15px auto;
+  font-family: "Roboto-Regular";
+  font-weight: normal;
   border-radius: 4px;
+  list-style: none;
+  font-size: 12px;
+}
+
+.ErrorV div{
+  width: 99%;
 }
 
 .spanGral{
@@ -570,6 +582,7 @@ select.selectPersonalizado{
 /*margen interior para los controles de ventanas modales*/
 .vmodal{
   padding: 20px 10 20px 20px;
+  background: #fffaf2;
 }
 
 
@@ -584,6 +597,11 @@ select.selectPersonalizado{
   /*border-radius: 0; */
   width: 70px !important;
   border: none;
+}
+
+/*para que el espacio que usa un float se recalcule, debe estar en el contenedor padre del elemento flotante*/
+.recalcularSize{
+  overflow: hidden;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -639,6 +657,10 @@ td,th{padding:1px}
   background: #faf5ed;
 }
 
+tbody{
+  background: #fffaf2;
+}
+
 .table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(even)>th {
   background: #fffaf2;
 }
@@ -665,11 +687,6 @@ table.table-striped{
 
 .form-horizontal .control-label {
   text-align: left;
-}
-
-#gxErrorViewer div{
-  color: red;
-  padding: 20px 20px 0 20px;
 }
 
 /*================================================================GENERALES FIN======================================================================================*/
