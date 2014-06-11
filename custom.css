@@ -1011,4 +1011,5 @@ span.Attribute{
   width: 20px !important;
   height: 20px !important;
   padding: 0 !important;
+  margin-right: -10px;
 }
