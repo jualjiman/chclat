@@ -585,6 +585,12 @@ select.selectPersonalizado{
   background: #fffaf2;
 }
 
+.modal-default{
+  background: #ebebeb;
+  color: #a8afb3;
+
+}
+
 
 /*estilos para boton de ventana modal*/
 .fuentes-iconicas{ 
