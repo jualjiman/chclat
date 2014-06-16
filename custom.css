@@ -618,6 +618,12 @@ select.selectPersonalizado{
   overflow: hidden;
 }
 
+/*evita que se salga del espacio del 100% en las ventanas modales*/
+.rowEspecial{
+  margin-left: -15px;
+  margin-right: 0;
+}
+
 /*========================BOOTSTRAP=================================*/
 
 .btn{
