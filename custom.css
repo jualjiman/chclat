@@ -92,6 +92,7 @@ html {
   font-size: 14px;
   height: 50px;
   border-bottom: solid 1px #cfcac2;
+  z-index: 88;
 }
 
 .ligthbox{
@@ -302,6 +303,7 @@ html {
 /* Pop-up */
 
 .PopupBorder {
+  
   background: #fffaf2;
   padding: 0 !important;
   border-radius: 6px;
@@ -313,6 +315,7 @@ html {
 }
 
 .PopupHeader {
+  min-width: 547px !important;
   margin-top: 0;
   padding: 0;;
   height: 35px !important;
@@ -347,6 +350,7 @@ html {
 
 .PopupContent {
   width: 100%;
+  min-width: 545px;
   height: 100%;
   padding: 0 !important;
   margin: 10px 0 0 0;
@@ -484,7 +488,7 @@ select.selectPersonalizado{
   color: #d19834;
   list-style: none;
   padding: 10px 10px;
-  width: 90%;
+  width: 99%;
   margin: 15px auto;
   font-family: "Roboto-Regular";
   font-weight: normal;
@@ -586,9 +590,13 @@ select.selectPersonalizado{
 }
 
 .modal-default{
-  background: #ebebeb;
-  color: #a8afb3;
+  background: #ECECEC;
+  color: #5F5F5F;
+}
 
+.modal-default:hover{
+  background: #cccccc;
+  color: #5F5F5F;
 }
 
 
@@ -766,10 +774,15 @@ span.Attribute{
   background: inherit;
 }
 
+.Form {
+  height: initial;
+}
+
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
 
 #MAINFORM{
   background: #fffaf2;
+  min-width: 510px;
 }
 
 #HEADER{
