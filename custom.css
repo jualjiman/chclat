@@ -557,6 +557,7 @@ select.selectPersonalizado{
 /*ajusta el ancho al elemento padre*/
 .widthAjustar{
   width: 100% !important;
+  margin-bottom: 10px;
 }
 
 .widthAjustarCal{ /*AJUSTAR AL ANCHO DEL ELEMENTO PADRE PARA CALENDARIOS*/
@@ -677,7 +678,7 @@ td,th{padding:1px}
   background: #faf5ed;
 }
 
-tbody{
+#W0071TABLE1 tbody{
   background: #fffaf2;
 }
 
@@ -1054,4 +1055,44 @@ span.Attribute{
   height: 20px !important;
   padding: 0 !important;
   margin-right: -10px;
+}
+#INSCRIPCION{
+  background: #dedad3;
+}
+/*======================================PupUp solicutd=====================================*/
+.txtmail{
+  height: 30px;
+  border: 1px solid #e6e4e1;
+
+  border-radius: 3px;
+}
+.ErrorMessages{
+  position: relative !important;
+  margin-top: 5px;
+  width: 80%;
+  background: #fc6440;
+  border: 0;
+  color: white;
+  font-family: "Roboto-Regular";
+  font-size: 11px;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px;
+  z-index: 2;
+}
+.ErrorMessages:after {
+content: '';
+display: block;
+position: absolute;
+top: -5px;
+left: 15px;
+width: 10px;
+height: 10px; 
+    background: #fc6440;
+ -moz-transform:rotate(-135deg);
+  -webkit-transform:rotate(-135deg);
+  z-index: -2;
+}
+.puntero{
+  margin-bottom: 15px;
 }
