@@ -1060,14 +1060,11 @@ span.Attribute{
 
   border-radius: 3px;
 }
-.text-right{
-  margin-top: 25px;
-}
 .ErrorMessages{
   position: relative !important;
   margin-top: 5px;
   width: 80%;
-  /*background: #fc6440;*/
+  background: #fc6440;
   border: 0;
   color: white;
   font-family: "Roboto-Regular";
@@ -1075,10 +1072,21 @@ span.Attribute{
   font-weight: normal;
   text-align: center;
   padding: 5px;
-  background: url(../GeneXusXEv2/puntero.png) no-repeat  top left,
-  url(../GeneXusXEv2/mensaje.png) repeat-x;
-  padding: 18px;
+  z-index: 2;
 }
-.puntero {
-  margin-bottom: 20px;
+.ErrorMessages:after {
+content: '';
+display: block;
+position: absolute;
+top: -5px;
+left: 15px;
+width: 10px;
+height: 10px; 
+    background: #fc6440;
+ -moz-transform:rotate(-135deg);
+  -webkit-transform:rotate(-135deg);
+  z-index: -2;
+}
+.puntero{
+  margin-bottom: 15px;
 }
