@@ -113,14 +113,16 @@ html {
 .navbar-default .navbar-nav>li>a{
   font-size:  14px;
   font-family: "Roboto-Regular";
-  color: #c0c8cc;
+  color: #c0c8cc !important;
   transition: all 1s ease;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 .navbar-default .navbar-nav>li>a:hover{
   background: #4d4b48;
   color: #9ca2a6;
   font-size:  14px;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Regular";
 }
 
 .navbar-btn {
@@ -423,6 +425,7 @@ html {
   color: #25556b;
   margin-top: 24px !important;
   margin-bottom: 20px !important;
+  display: block;
 }
 
 .tituloSecundario{
@@ -430,6 +433,8 @@ html {
   font-size: 18px;
   color: #46788f;
   margin-bottom: 16px;
+  margin-top: 20px;
+  display: block;
 }
 
 /*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
@@ -441,6 +446,7 @@ html {
 
 .bordeAuxiliar{
   margin-bottom: 16px;
+  margin-top: 6px;
   padding-top: 16px;
   border-top: solid 1px #e0dfdc;
 }
@@ -470,17 +476,20 @@ input[type=text]{
   padding-left: 5px;
   padding-right: 5px;
   border: solid 1px #e6e4e1;
+  margin: 0;
 }
 
 textarea{
   border-radius: 3px;
   border: solid 1px #e6e4e1 !important;
+  margin: 0 !important;
 }
 
 select.selectPersonalizado{
   height: 30px;
   border-radius: 3px;
   border: solid 1px #e6e4e1;
+  margin: 0;
 }
 
 .ErrorViewerBullet div{
@@ -708,6 +717,15 @@ table.table-striped{
 
 .form-horizontal .control-label {
   text-align: left;
+}
+
+.caret {
+  margin-left: 5px;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  background-color: inherit;
+  color: inherit;
 }
 
 /*================================================================GENERALES FIN======================================================================================*/
@@ -1050,7 +1068,7 @@ span.Attribute{
   margin-top: 25px;
 }
 .btn-add{
-  font-size: 13px !important;
+  font-size: 12px !important;
   width: 20px !important;
   height: 20px !important;
   padding: 0 !important;
