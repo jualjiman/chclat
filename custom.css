@@ -506,6 +506,20 @@ select.selectPersonalizado{
   font-size: 12px;
 }
 
+ .gx_ev div{
+    background: #ffeccc;
+    color: #d19834;
+    list-style: none;
+    padding: 10px 10px;
+    width: 95%;
+    margin: 15px auto;
+    font-family: "Roboto-Regular";
+    font-weight: normal;
+    border-radius: 4px;
+    list-style: none;
+    font-size: 12px;
+ }
+
 .ErrorV div{
   width: 99%;
 }
@@ -514,7 +528,7 @@ select.selectPersonalizado{
   display: block;
   font-family: "Roboto-Regular" !important;
   font-size: 14px !important;
-  color: #46788f;
+  color: #46788f !important;
   margin-bottom: 6px;
   font-weight: normal !important;
 }
@@ -1112,5 +1126,10 @@ height: 10px;
   z-index: -2;
 }
 .puntero{
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
+}
+
+.btn-ajustar{
+  margin-right: 0px !important
+
 }
