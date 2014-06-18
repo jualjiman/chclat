@@ -444,6 +444,12 @@ html {
   color: #46788f;
 }
 
+.textoEstatico{
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  color: #5F5F5F;
+}
+
 .bordeAuxiliar{
   margin-bottom: 16px;
   margin-top: 6px;
@@ -599,6 +605,7 @@ select.selectPersonalizado{
   background: #fffaf2;
 }
 
+/*clase para el boton modal auxiliar*/
 .modal-default{
   background: #ECECEC;
   color: #5F5F5F;
@@ -609,6 +616,9 @@ select.selectPersonalizado{
   color: #5F5F5F;
 }
 
+.matarMarginTop{
+  margin-top: 0;
+}
 
 /*estilos para boton de ventana modal*/
 .fuentes-iconicas{ 
@@ -632,6 +642,14 @@ select.selectPersonalizado{
 .rowEspecial{
   margin-left: -15px;
   margin-right: 0;
+}
+
+.romperPalabras{
+  word-wrap: break-word;
+}
+
+.matarMargenes{
+  margin:0 !important;
 }
 
 /*========================BOOTSTRAP=================================*/
@@ -728,6 +746,10 @@ table.table-striped{
   color: inherit;
 }
 
+/*td{
+  background: blue;
+}*/
+
 /*================================================================GENERALES FIN======================================================================================*/
 
 /*================================================================GENEXUS OVERWRITE INICIO===============================================================================*/
@@ -801,6 +823,10 @@ span.Attribute{
 
 .Form {
   height: initial;
+}
+
+.FreeStyleGridOdd {
+  background: inherit;
 }
 
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
@@ -1072,8 +1098,9 @@ span.Attribute{
   width: 20px !important;
   height: 20px !important;
   padding: 0 !important;
-  margin-right: -10px;
+  margin-right: -15px;
 }
+
 #INSCRIPCION{
   background: #dedad3;
 }
