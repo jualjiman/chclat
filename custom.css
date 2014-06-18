@@ -842,6 +842,7 @@ span.Attribute{
 
 .Form {
   height: initial;
+  background: inherit !important;
 }
 
 .FreeStyleGridOdd {
