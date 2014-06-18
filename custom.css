@@ -444,11 +444,12 @@ html {
   color: #46788f;
 }
 
-.textoEstatico{
+/*.textoEstatico{
   font-family: "Roboto-Regular";
   font-size: 14px;
   color: #5F5F5F;
-}
+  padding-right: 10px;
+}*/
 
 .bordeAuxiliar{
   margin-bottom: 16px;
@@ -652,6 +653,10 @@ select.selectPersonalizado{
   margin:0 !important;
 }
 
+.enLinea{
+  display: inline-block;
+}
+
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -827,6 +832,13 @@ span.Attribute{
 
 .FreeStyleGridOdd {
   background: inherit;
+}
+
+.Readonly{
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  color: #5F5F5F;
+  padding-right: 10px;
 }
 
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
