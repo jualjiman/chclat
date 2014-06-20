@@ -439,9 +439,10 @@ html {
 
 /*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
 .tituloAuxiliar{
-  font-family: "Roboto-Regular";
-  font-size: 16px;
-  color: #46788f;
+  font-family: "Roboto-Regular" !important;
+  font-size: 16px !important;
+  color: #46788f !important;
+  font-weight: normal !important!;
 }
 
 /*.textoEstatico{
@@ -456,6 +457,12 @@ html {
   margin-top: 6px;
   padding-top: 16px;
   border-top: solid 1px #e0dfdc;
+}
+
+.bordeAuxiliarAbajo{
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #e0dfdc;
 }
 
 .bordeAuxiliarFiltro{
@@ -487,6 +494,7 @@ input[type=text]{
 }
 
 textarea{
+  padding: 5px;
   border-radius: 3px;
   border: solid 1px #e6e4e1 !important;
   margin: 0 !important;
@@ -519,7 +527,7 @@ select.selectPersonalizado{
     list-style: none;
     padding: 10px 10px;
     width: 95%;
-    margin: 15px auto;
+    margin: 10px auto;
     font-family: "Roboto-Regular";
     font-weight: normal;
     border-radius: 4px;
@@ -671,6 +679,26 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
+.justificar{
+  display: block;
+  text-align: justify;
+}
+
+.pRelative{
+  position: relative;
+}
+
+.pAbsolute{
+  position: absolute;
+}
+
+/*////////////////////////ESPECIFICAS//////////////////////////////*/
+
+.badgeComentarios{
+  top: 2px;
+  left: 106px;
+}
+/*////////////////////////////////////////////////////////////////*/
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -718,7 +746,7 @@ select.selectPersonalizado{
   background: inherit;
 }
 
-td,th{padding:1px}
+td span{background: transparent !important;}
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
   background: #faf5ed;
@@ -763,6 +791,22 @@ table.table-striped{
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
   background-color: inherit;
   color: inherit;
+}
+
+.badge {
+display: inline-block;
+min-width: 10px;
+padding: 2px 5px;
+font-size: 11px;
+color: #fff;
+line-height: 1;
+font-weight: normal;
+vertical-align: baseline;
+white-space: nowrap;
+text-align: center;
+background-color: #999;
+border-radius: 10px;
+margin-left: 3px;
 }
 
 /*td{
@@ -826,6 +870,7 @@ span.Attribute{
 .ReadonlyAttribute{
   background: inherit;  
 }
+
 .Table{width: 100%;}
 
 .Attribute, .ImageAttribute, .ReadonlyImageAttribute, .VideoAttribute, .ReadonlyVideoAttribute, .AudioAttribute, .ReadonlyAudioAttribute, .ErrorAttribute, .WarningAttribute, .ReadonlyAttribute,
@@ -851,7 +896,7 @@ span.Attribute{
 
 .Readonly{
   font-family: "Roboto-Regular";
-  font-size: 14px;
+  font-size: 13px;
   color: #5F5F5F;
   padding-right: 10px;
 }
