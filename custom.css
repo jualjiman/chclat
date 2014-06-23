@@ -168,6 +168,7 @@ html {
 .center-block {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .Hyperlink {
@@ -429,9 +430,9 @@ html {
 }
 
 .tituloSecundario{
-  font-family: "Roboto-Regular";
-  font-size: 18px;
-  color: #46788f;
+  font-family: "Roboto-Regular" !important;
+  font-size: 18px !important;
+  color: #46788f !important;
   margin-bottom: 16px;
   margin-top: 20px;
   display: block;
@@ -442,15 +443,8 @@ html {
   font-family: "Roboto-Regular" !important;
   font-size: 16px !important;
   color: #46788f !important;
-  font-weight: normal !important!;
+  font-weight: normal !important;
 }
-
-/*.textoEstatico{
-  font-family: "Roboto-Regular";
-  font-size: 14px;
-  color: #5F5F5F;
-  padding-right: 10px;
-}*/
 
 .bordeAuxiliar{
   margin-bottom: 16px;
@@ -600,6 +594,7 @@ select.selectPersonalizado{
 
 .widthAjustarCal{ /*AJUSTAR AL ANCHO DEL ELEMENTO PADRE PARA CALENDARIOS*/
   width: 93% !important;
+  display: inline-block;
 }
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
@@ -610,6 +605,10 @@ select.selectPersonalizado{
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionDerecha{
   margin-right: 15px !important;
+}
+
+.separacionIzquierda{
+  margin-left: 15px !important;
 }
 
 /*convertir mayusculas*/
@@ -692,11 +691,28 @@ select.selectPersonalizado{
   position: absolute;
 }
 
+td hr{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-color: #e0dfdc;
+}
+
 /*////////////////////////ESPECIFICAS//////////////////////////////*/
+
+.iconoTitulo{
+  font-size: 70px;
+  padding-top: 10px;
+  /*padding-bottom: 10px;*/
+}
 
 .badgeComentarios{
   top: 2px;
   left: 106px;
+}
+
+.badgeAlertas{
+  top: 2px;
+  left: 66px;
 }
 /*////////////////////////////////////////////////////////////////*/
 /*========================BOOTSTRAP=================================*/
@@ -809,9 +825,9 @@ border-radius: 10px;
 margin-left: 3px;
 }
 
-/*td{
-  background: blue;
-}*/
+.glyphicon-warning-sign{
+  color: rgb(255, 112, 0);
+}
 
 /*================================================================GENERALES FIN======================================================================================*/
 
