@@ -29,6 +29,37 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/fonts/icomoon.eot?-xmovp1');
+  src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
+    url('../fonts/icomoon/fonts/icomoon.woff?-xmovp1') format('woff'),
+    url('../fonts/icomoon/fonts/icomoon.ttf?-xmovp1') format('truetype'),
+    url('../fonts/icomoon/fonts/icomoon.svg?-xmovp1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE601:before {
+  content: "\e601";
+  color: #fc6440;
+  text-align: right;
+}
+
 .popup-button-checked {
   background: url(../fonts/icons/checked.png) no-repeat center #38c789 !important;
 }
@@ -168,6 +199,7 @@ html {
 .center-block {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 
 .Hyperlink {
@@ -429,9 +461,9 @@ html {
 }
 
 .tituloSecundario{
-  font-family: "Roboto-Regular";
-  font-size: 18px;
-  color: #46788f;
+  font-family: "Roboto-Regular" !important;
+  font-size: 18px !important;
+  color: #46788f !important;
   margin-bottom: 16px;
   margin-top: 20px;
   display: block;
@@ -439,23 +471,34 @@ html {
 
 /*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
 .tituloAuxiliar{
-  font-family: "Roboto-Regular";
-  font-size: 16px;
-  color: #46788f;
+  font-family: "Roboto-Regular" !important;
+  font-size: 16px !important;
+  color: #46788f !important;
+  font-weight: normal !important;
 }
 
-/*.textoEstatico{
-  font-family: "Roboto-Regular";
-  font-size: 14px;
-  color: #5F5F5F;
-  padding-right: 10px;
-}*/
+.colorAuxiliar{
+  color: #6f9eb3 !important;
+}
+
+.tituloAlerta{
+  font-family: "Roboto-Regular" !important;
+  font-size: 18px !important;
+  color: #fc6440 !important;
+  font-weight: normal !important;
+}
 
 .bordeAuxiliar{
   margin-bottom: 16px;
   margin-top: 6px;
   padding-top: 16px;
   border-top: solid 1px #e0dfdc;
+}
+
+.bordeAuxiliarAbajo{
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #e0dfdc;
 }
 
 .bordeAuxiliarFiltro{
@@ -487,6 +530,7 @@ input[type=text]{
 }
 
 textarea{
+  padding: 5px;
   border-radius: 3px;
   border: solid 1px #e6e4e1 !important;
   margin: 0 !important;
@@ -519,7 +563,7 @@ select.selectPersonalizado{
     list-style: none;
     padding: 10px 10px;
     width: 95%;
-    margin: 15px auto;
+    margin: 10px auto;
     font-family: "Roboto-Regular";
     font-weight: normal;
     border-radius: 4px;
@@ -587,11 +631,12 @@ select.selectPersonalizado{
 /*ajusta el ancho al elemento padre*/
 .widthAjustar{
   width: 100% !important;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .widthAjustarCal{ /*AJUSTAR AL ANCHO DEL ELEMENTO PADRE PARA CALENDARIOS*/
   width: 93% !important;
+  display: inline-block;
 }
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
@@ -602,6 +647,10 @@ select.selectPersonalizado{
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionDerecha{
   margin-right: 15px !important;
+}
+
+.separacionIzquierda{
+  margin-left: 15px !important;
 }
 
 /*convertir mayusculas*/
@@ -671,6 +720,71 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
+.centradoVertical{
+  vertical-align: middle;
+}
+
+.justificar{
+  display: block;
+  text-align: justify;
+}
+
+.pRelative{
+  position: relative;
+}
+
+.pAbsolute{
+  position: absolute;
+}
+
+td hr{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-color: #e0dfdc;
+}
+
+hr.margenPequeño{
+  margin-bottom: 16px;
+  border-color: transparent;
+}
+
+.textoDerecha{
+  text-align: right;
+}
+
+/*////////////////////////ESPECIFICAS//////////////////////////////*/
+
+.iconoTitulo{
+  font-size: 70px;
+  padding-top: 10px;
+  /*padding-bottom: 10px;*/
+}
+
+.badgeComentarios{
+  top: 2px;
+  left: 106px;
+}
+
+.badgeAlertas{
+  top: 2px;
+  left: 66px;
+}
+
+#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloAlerta{
+  font-size: 14px !important;
+}
+
+#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+  font-size: 30px;
+}
+
+#span_INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+  font-size: 70px;
+}
+
+
+
+/*////////////////////////////////////////////////////////////////*/
 /*========================BOOTSTRAP=================================*/
 
 .btn{
@@ -718,7 +832,7 @@ select.selectPersonalizado{
   background: inherit;
 }
 
-td,th{padding:1px}
+td span{background: transparent !important;}
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
   background: #faf5ed;
@@ -765,9 +879,25 @@ table.table-striped{
   color: inherit;
 }
 
-/*td{
-  background: blue;
-}*/
+.badge {
+display: inline-block;
+min-width: 10px;
+padding: 2px 5px;
+font-size: 11px;
+color: #fff;
+line-height: 1;
+font-weight: normal;
+vertical-align: baseline;
+white-space: nowrap;
+text-align: center;
+background-color: #999;
+border-radius: 10px;
+margin-left: 3px;
+}
+
+.glyphicon-warning-sign{
+  color: rgb(255, 112, 0);
+}
 
 /*================================================================GENERALES FIN======================================================================================*/
 
@@ -826,6 +956,7 @@ span.Attribute{
 .ReadonlyAttribute{
   background: inherit;  
 }
+
 .Table{width: 100%;}
 
 .Attribute, .ImageAttribute, .ReadonlyImageAttribute, .VideoAttribute, .ReadonlyVideoAttribute, .AudioAttribute, .ReadonlyAudioAttribute, .ErrorAttribute, .WarningAttribute, .ReadonlyAttribute,
@@ -842,6 +973,7 @@ span.Attribute{
 
 .Form {
   height: initial;
+  background: inherit !important;
 }
 
 .FreeStyleGridOdd {
@@ -850,7 +982,7 @@ span.Attribute{
 
 .Readonly{
   font-family: "Roboto-Regular";
-  font-size: 14px;
+  font-size: 13px;
   color: #5F5F5F;
   padding-right: 10px;
 }
