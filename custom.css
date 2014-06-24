@@ -29,6 +29,37 @@
   src: url('../fonts/Roboto-Medium.ttf');
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon/fonts/icomoon.eot?-xmovp1');
+  src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
+    url('../fonts/icomoon/fonts/icomoon.woff?-xmovp1') format('woff'),
+    url('../fonts/icomoon/fonts/icomoon.ttf?-xmovp1') format('truetype'),
+    url('../fonts/icomoon/fonts/icomoon.svg?-xmovp1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE601:before {
+  content: "\e601";
+  color: #fc6440;
+  text-align: right;
+}
+
 .popup-button-checked {
   background: url(../fonts/icons/checked.png) no-repeat center #38c789 !important;
 }
@@ -446,6 +477,17 @@ html {
   font-weight: normal !important;
 }
 
+.colorAuxiliar{
+  color: #6f9eb3 !important;
+}
+
+.tituloAlerta{
+  font-family: "Roboto-Regular" !important;
+  font-size: 18px !important;
+  color: #fc6440 !important;
+  font-weight: normal !important;
+}
+
 .bordeAuxiliar{
   margin-bottom: 16px;
   margin-top: 6px;
@@ -589,7 +631,7 @@ select.selectPersonalizado{
 /*ajusta el ancho al elemento padre*/
 .widthAjustar{
   width: 100% !important;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .widthAjustarCal{ /*AJUSTAR AL ANCHO DEL ELEMENTO PADRE PARA CALENDARIOS*/
@@ -678,6 +720,10 @@ select.selectPersonalizado{
   display: inline-block;
 }
 
+.centradoVertical{
+  vertical-align: middle;
+}
+
 .justificar{
   display: block;
   text-align: justify;
@@ -697,6 +743,15 @@ td hr{
   border-color: #e0dfdc;
 }
 
+hr.margenPequeño{
+  margin-bottom: 16px;
+  border-color: transparent;
+}
+
+.textoDerecha{
+  text-align: right;
+}
+
 /*////////////////////////ESPECIFICAS//////////////////////////////*/
 
 .iconoTitulo{
@@ -714,6 +769,21 @@ td hr{
   top: 2px;
   left: 66px;
 }
+
+#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloAlerta{
+  font-size: 14px !important;
+}
+
+#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+  font-size: 30px;
+}
+
+#span_INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+  font-size: 70px;
+}
+
+
+
 /*////////////////////////////////////////////////////////////////*/
 /*========================BOOTSTRAP=================================*/
 
