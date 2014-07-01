@@ -55,9 +55,14 @@
 }
 
 .icon-uniE601:before {
-  content: "\e601";
+  content: "\e600";
   color: #fc6440;
   text-align: right;
+}
+
+.icon-search:before{
+  content: "\e003";
+  margin-right: 5px;
 }
 
 .popup-button-checked {
@@ -435,6 +440,7 @@ html {
 
 /*=========================================================================================================CHICOS NUEVOS==================*/
 /*================================================================GENERALES INICIOS======================================================================================*/
+
 #FILTRO{
   background: #dedad3;
   border-right: solid 1px #d1cdc7;
@@ -737,14 +743,19 @@ select.selectPersonalizado{
   position: absolute;
 }
 
-td hr{
+hr.separador{
   margin-top: 8px;
   margin-bottom: 8px;
   border-color: #e0dfdc;
 }
 
-hr.margenPequeño{
-  margin-bottom: 16px;
+hr.separadorTenue{
+  margin-bottom: 8px;
+  border-color: #EBEBEB;
+}
+
+hr.separador:last-child{
+  margin-bottom: 0;
   border-color: transparent;
 }
 
@@ -899,6 +910,10 @@ margin-left: 3px;
   color: rgb(255, 112, 0);
 }
 
+.form-control{
+  font-family: 'Roboto-Regular';
+}
+
 /*================================================================GENERALES FIN======================================================================================*/
 
 /*================================================================GENEXUS OVERWRITE INICIO===============================================================================*/
@@ -983,7 +998,7 @@ span.Attribute{
 .Readonly{
   font-family: "Roboto-Regular";
   font-size: 13px;
-  color: #5F5F5F;
+  color: #5F5F5F !important;
   padding-right: 10px;
 }
 
