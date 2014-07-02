@@ -11,31 +11,31 @@
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('../fonts/Roboto-Bold.ttf');
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../fonts/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url('../fonts/Roboto-Light.ttf');
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url('../fonts/Roboto-Medium.ttf');
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
 }
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon/fonts/icomoon.eot?-xmovp1');
-  src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
-    url('../fonts/icomoon/fonts/icomoon.woff?-xmovp1') format('woff'),
-    url('../fonts/icomoon/fonts/icomoon.ttf?-xmovp1') format('truetype'),
-    url('../fonts/icomoon/fonts/icomoon.svg?-xmovp1#icomoon') format('svg');
+  src:url('../fonts/icomoon/icomoon.eot?-xmovp1');
+  src:url('../fonts/icomoon/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff?-xmovp1') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf?-xmovp1') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg?-xmovp1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -648,6 +648,10 @@ select.selectPersonalizado{
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionVertical{
   margin-bottom: 31px !important;
+}
+
+.separacionTop{
+  margin-top: 15px !important;
 }
 
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
