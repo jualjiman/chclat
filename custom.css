@@ -466,6 +466,7 @@ html {
   display: block;
 }
 
+/*en un h2*/
 .tituloSecundario{
   font-family: "Roboto-Regular" !important;
   font-size: 18px !important;
@@ -481,8 +482,12 @@ html {
   font-size: 16px !important;
   color: #46788f !important;
   font-weight: normal !important;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: block;
 }
 
+/*color azul palido para texto auxiliar*/
 .colorAuxiliar{
   color: #6f9eb3 !important;
 }
@@ -492,6 +497,13 @@ html {
   font-size: 18px !important;
   color: #fc6440 !important;
   font-weight: normal !important;
+}
+
+/*cuando necesitas un borde por fuera de un row que no perjudique el margen de abajo*/
+.bordeAuxiliarFix{
+  margin-top: 6px;
+  padding-top: 16px;
+  border-top: solid 1px #e0dfdc;
 }
 
 .bordeAuxiliar{
@@ -588,6 +600,12 @@ select.selectPersonalizado{
   color: #46788f !important;
   margin-bottom: 6px;
   font-weight: normal !important;
+}
+
+.spanGralReadonly{
+  margin-bottom: 0;
+  color: #6f9eb3 !important;
+  font-size: 13px !important;
 }
 
 .spanSoloLectura{
@@ -789,6 +807,10 @@ hr.separador:last-child{
   font-size: 14px !important;
 }
 
+#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloSecundario{
+  font-size: 14px !important;
+}
+
 #span_W0009INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
   font-size: 30px;
 }
@@ -847,7 +869,7 @@ hr.separador:last-child{
   background: inherit;
 }
 
-td span{background: transparent !important;}
+/*td span{background: transparent !important;}*/
 
 .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
   background: #faf5ed;
@@ -986,10 +1008,6 @@ span.Attribute{
   font-family: "Roboto-Regular"; 
 }
 
-.Grid{
-  background: inherit;
-}
-
 .Form {
   height: initial;
   background: inherit !important;
@@ -1001,7 +1019,7 @@ span.Attribute{
 
 .Readonly{
   font-family: "Roboto-Regular";
-  font-size: 13px;
+  font-size: 14px;
   color: #5F5F5F !important;
   padding-right: 10px;
 }
@@ -1118,6 +1136,10 @@ span.Attribute{
   padding-bottom: 10px;
   width: 99% !important;
   font-size: 14pt;
+}
+
+.Footer{
+  background: inherit !important;
 }
 
 /*============================================Seleccion Rol============================================================*/
@@ -1321,4 +1343,43 @@ height: 10px;
 .btn-ajustar{
   margin-right: 0px !important
 
+}
+
+/*TEMPORAL*/
+.Grid{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.Grid>tbody>tr:nth-child(odd)>td, .Grid>tbody>tr:nth-child(odd)>th {
+  background: #faf5ed;
+}
+
+#W0071TABLE1 tbody{
+  background: #fffaf2;
+}
+
+.Grid>tbody>tr:nth-child(even)>td, .Grid>tbody>tr:nth-child(even)>th {
+  background: #fffaf2;
+}
+
+table.Grid th{
+  width: auto;
+  background: #fffaf2 !important;
+  border-bottom: solid 1px #dedad3 !important;
+}
+
+table.Grid thead tr th span{
+  background: #fffaf2;
+  font-family: "Roboto-Regular";
+  font-size: 14px;
+  color: #46788f;
+  font-weight: normal;
+  width: auto;
+}
+
+table.Grid{
+  width: 100%;
+  background: #fffaf2;
 }
