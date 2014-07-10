@@ -539,7 +539,7 @@ html {
 .tituloGrupo{font-family: "Roboto-Medium"; font-size: 18px; color: #46788f; margin-bottom: 24px;}
 
 input[type=text]{
-  height: 30px;
+  height: 30px !important;
   border-radius: 3px;
   padding-left: 5px;
   padding-right: 5px;
@@ -580,7 +580,7 @@ select.selectPersonalizado{
     color: #d19834;
     list-style: none;
     padding: 10px 10px;
-    width: 95%;
+    width: 99%;
     margin: 10px auto;
     font-family: "Roboto-Regular";
     font-weight: normal;
@@ -753,7 +753,7 @@ select.selectPersonalizado{
 }
 
 .justificar{
-  display: block;
+  /*display: block;*/
   text-align: justify;
 }
 
@@ -803,22 +803,122 @@ hr.separador:last-child{
   left: 66px;
 }
 
-#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloAlerta{
+/*#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloAlerta{
+  font-size: 14px !important;
+}*/
+
+
+[id^="span_W0008INSCRIPCIONALERTACONTENIDO"] div .tituloSecundario,
+[id^="span_W0008INSCRIPCIONALERTACONTENIDO"] div .tituloAlerta,
+[id^="span_W0009INSCRIPCIONALERTACONTENIDO"] div .tituloSecundario,
+[id^="span_W0009INSCRIPCIONALERTACONTENIDO"] div .tituloAlerta{
   font-size: 14px !important;
 }
 
-#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloSecundario{
-  font-size: 14px !important;
-}
 
-#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+[id^="span_W0008INSCRIPCIONALERTACONTENIDO"] div #icon-warning,
+[id^="span_W0009INSCRIPCIONALERTACONTENIDO"] div #icon-warning{
   font-size: 30px;
 }
 
-#span_INSCRIPCIONALERTACONTENIDO_0001 div #icon-warning{
+[id^="span_INSCRIPCIONALERTACONTENIDO"] div #icon-warning{
   font-size: 70px;
 }
 
+#Gridregistroimagen_imagenContainerDiv tfoot tr td{
+  background: #fffaf2; 
+}
+
+#Gridregistroimagen_imagenContainerDiv tfoot tr td a{
+  background: #3884bf; 
+  border-color: #2c6a99;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+#Gridregistroimagen_imagenContainerDiv tfoot tr td a{
+  background: #3884bf; 
+  border-color: #2c6a99;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: background 1s ease, color 1s ease, border-color 1s ease;
+  margin-top: 10px;
+}
+
+#Gridregistroimagen_imagenContainerDiv tfoot tr td a:hover{
+  background: #2c6a99; 
+  border-color:#214f73;
+  color: white;
+}
+
+div.gx-multimedia-upload a.action {
+  background-color: #3884bf;
+}
+
+div.gx-multimedia-upload {
+  border:none;
+  width: 104px;
+  height: 50px;
+}
+
+div.gx-multimedia-upload a span {
+  height: 45px;
+  width: 90px;
+}
+
+div.gx-multimedia-upload img{
+  max-width: 101px;
+  max-height: 50px;
+}
+
+div.gx-multimedia-upload #gxdialog_b{
+  left: -500px !important;
+  top: inherit;
+}
+
+div.gx-multimedia-upload #gxdialog_b label{
+  font-family: "Roboto-Regular" !important;
+  font-size: 14px !important;
+  color: #46788f !important;
+  margin-bottom: 6px;
+  font-weight: normal !important;
+}
+
+div.gx-multimedia-upload .PopupBorder{
+  background: #fffaf2;
+  height: 150px !important;
+  width: 550px !important;
+}
+
+div.gx-multimedia-upload div.fields-ct,
+div.gx-multimedia-upload .PopupContent{
+  background: #fffaf2;
+  height: 110px !important; 
+}
+
+div.gx-multimedia-upload input.Button{
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: 30px;
+
+  background: #3884bf; 
+  border-color: #2c6a99;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: background 1s ease, color 1s ease, border-color 1s ease;
+  box-shadow: none;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "Roboto-Medium";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+div.gx-multimedia-upload input.Button:hover{
+  background: #2c6a99; 
+  border-color:#214f73;
+  color: white;
+}
 
 
 /*////////////////////////////////////////////////////////////////*/
@@ -901,6 +1001,13 @@ table.table-striped thead tr th span{
 table.table-striped{
   width: 100%;
   background: #fffaf2;
+}
+
+table.table-striped tbody tr td input,
+table.table-striped tbody tr td a img{
+  width: 20px !important;
+  display: block;
+  margin: 0 auto;
 }
 
 .form-horizontal .control-label {
@@ -1095,8 +1202,22 @@ span.Attribute{
 }
 
 #LOGIN_FORM input[type="text"],
+#LOGIN_FORM input[type="file"],
 #LOGIN_FORM input[type="password"]
 {
+  display: block;
+  border-radius: 0;
+  padding: 5px 6px;
+  background: #fffdfa;
+  border: solid 1px #bfbfbf;
+  border-radius: 2px;
+  font-family: "Roboto-Regular";
+  width: 99%;
+  font-size: 18px;
+  height: 35px;
+}
+
+.inputText{
   display: block;
   border-radius: 0;
   padding: 5px 6px;
