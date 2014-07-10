@@ -11,31 +11,31 @@
 
 @font-face {
   font-family: 'Roboto-Bold';
-  src: url('../fonts/Roboto-Bold.ttf');
+  src: url('../fonts/Roboto/Roboto-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url('../fonts/Roboto-Regular.ttf');
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url('../fonts/Roboto-Light.ttf');
+  src: url('../fonts/Roboto/Roboto-Light.ttf');
 }
 
 @font-face {
   font-family: 'Roboto-Medium';
-  src: url('../fonts/Roboto-Medium.ttf');
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
 }
 
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon/fonts/icomoon.eot?-xmovp1');
-  src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
-    url('../fonts/icomoon/fonts/icomoon.woff?-xmovp1') format('woff'),
-    url('../fonts/icomoon/fonts/icomoon.ttf?-xmovp1') format('truetype'),
-    url('../fonts/icomoon/fonts/icomoon.svg?-xmovp1#icomoon') format('svg');
+  src:url('../fonts/icomoon/icomoon.eot?-xmovp1');
+  src:url('../fonts/icomoon/icomoon.eot?#iefix-xmovp1') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff?-xmovp1') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf?-xmovp1') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg?-xmovp1#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,9 +55,14 @@
 }
 
 .icon-uniE601:before {
-  content: "\e601";
+  content: "\e600";
   color: #fc6440;
   text-align: right;
+}
+
+.icon-search:before{
+  content: "\e003";
+  margin-right: 5px;
 }
 
 .popup-button-checked {
@@ -435,6 +440,7 @@ html {
 
 /*=========================================================================================================CHICOS NUEVOS==================*/
 /*================================================================GENERALES INICIOS======================================================================================*/
+
 #FILTRO{
   background: #dedad3;
   border-right: solid 1px #d1cdc7;
@@ -467,6 +473,7 @@ html {
   margin-bottom: 16px;
   margin-top: 20px;
   display: block;
+  font-weight: normal !important;
 }
 
 /*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
@@ -644,6 +651,10 @@ select.selectPersonalizado{
   margin-bottom: 31px !important;
 }
 
+.separacionTop{
+  margin-top: 15px !important;
+}
+
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionDerecha{
   margin-right: 15px !important;
@@ -737,14 +748,19 @@ select.selectPersonalizado{
   position: absolute;
 }
 
-td hr{
+hr.separador{
   margin-top: 8px;
   margin-bottom: 8px;
   border-color: #e0dfdc;
 }
 
-hr.margenPequeño{
-  margin-bottom: 16px;
+hr.separadorTenue{
+  margin-bottom: 8px;
+  border-color: #EBEBEB;
+}
+
+hr.separador:last-child{
+  margin-bottom: 0;
   border-color: transparent;
 }
 
@@ -899,6 +915,10 @@ margin-left: 3px;
   color: rgb(255, 112, 0);
 }
 
+.form-control{
+  font-family: 'Roboto-Regular';
+}
+
 /*================================================================GENERALES FIN======================================================================================*/
 
 /*================================================================GENEXUS OVERWRITE INICIO===============================================================================*/
@@ -983,7 +1003,7 @@ span.Attribute{
 .Readonly{
   font-family: "Roboto-Regular";
   font-size: 13px;
-  color: #5F5F5F;
+  color: #5F5F5F !important;
   padding-right: 10px;
 }
 
@@ -1224,6 +1244,13 @@ span.Attribute{
     .btnSize{
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  .alinearTop{
+    margin-top: -22px;
   }
 }
 
