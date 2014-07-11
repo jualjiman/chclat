@@ -474,6 +474,7 @@ html {
   margin-bottom: 16px;
   margin-top: 20px;
   display: block;
+  font-weight: normal !important;
 }
 
 /*en un h3 siempre, opcional le puedes agregar borde auxiliar tambien*/
@@ -1126,7 +1127,11 @@ span.Attribute{
 
 .Readonly{
   font-family: "Roboto-Regular";
+<<<<<<< HEAD
+  font-size: 13px;
+=======
   font-size: 14px;
+>>>>>>> 9bf962765f7cb6c575e25d83f1889506cb28f127
   color: #5F5F5F !important;
   padding-right: 10px;
 }
@@ -1386,6 +1391,13 @@ span.Attribute{
     .btnSize{
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  .alinearTop{
+    margin-top: -22px;
   }
 }
 
