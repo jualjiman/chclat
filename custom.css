@@ -1397,7 +1397,7 @@ span.Attribute{
 
 @media screen and (min-width: 992px){
   .alinearTop{
-    margin-top: -22px;
+    margin-top: -52px;
   }
 }
 
@@ -1439,6 +1439,7 @@ span.Attribute{
 .txtmail{
   height: 30px;
   border: 1px solid #e6e4e1;
+  padding-left: 5px;
 
   border-radius: 3px;
 }
@@ -1470,11 +1471,23 @@ height: 10px;
   z-index: -2;
 }
 .puntero{
+  display: block;
   margin-bottom: 15px !important;
 }
 
 .btn-ajustar{
-  margin-right: 0px !important
+  margin-right: 0px !important;
+
+}
+.ajustar{
+  width: 45%;
+}
+.linea{
+  display: inline-flex;
+  display: -o-inline-flex;
+  display: -ms-inline-flex;
+  display: -moz-inline-flex;
+  display: -webkit-inline-flex;
 
 }
 
