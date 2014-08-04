@@ -133,7 +133,7 @@ strong{
   font-family: "Roboto-Medium";
   font-size: 14px;
   height: 50px;
-  border-bottom: solid 1px #cfcac2;
+  /*border-bottom: solid 1px #cfcac2;*/
   z-index: 88;
 }
 
@@ -228,14 +228,15 @@ strong{
 .sidebar-right {
   background: #fffaf2;
   position: fixed;
-  top: 52px;
+  top: 50px;
   right: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 80; /*<<<<=====================*/
   border-left: 1px solid #eee;
   overflow: auto;
   opacity: 1;
   display: block;
+  padding-top: 5px;
   transition: opacity 0.3s linear;
 }
 
@@ -541,6 +542,7 @@ strong{
 .tituloGrupo{font-family: "Roboto-Medium"; font-size: 18px; color: #46788f; margin-bottom: 24px;}
 
 input[type=text]{
+  font-family: "Roboto-Regular"; 
   height: 30px !important;
   border-radius: 3px;
   padding-left: 5px;
@@ -811,12 +813,12 @@ hr.separador:last-child{
 
 .badgeComentarios{
   top: 2px;
-  left: 106px;
+  left: 109px;
 }
 
 .badgeAlertas{
   top: 2px;
-  left: 66px;
+  left: 68px;
 }
 
 /*#span_W0009INSCRIPCIONALERTACONTENIDO_0001 div .tituloAlerta{
@@ -936,6 +938,20 @@ div.gx-multimedia-upload input.Button:hover{
   color: white;
 }
 
+.colorPrioridadBlanco{
+  background: white;
+}
+
+.colorPrioridadAmarillo{
+  background: yellow:;
+}
+
+.colorPrioridadRojo{
+  background: red;
+}
+
+
+
 
 /*////////////////////////////////////////////////////////////////*/
 /*========================BOOTSTRAP=================================*/
@@ -1026,6 +1042,10 @@ table.table-striped tbody tr td a img{
   margin: 0 auto;
 }
 
+.table .table {
+  background-color: inherit;
+}
+
 .form-horizontal .control-label {
   text-align: left;
 }
@@ -1040,19 +1060,19 @@ table.table-striped tbody tr td a img{
 }
 
 .badge {
-display: inline-block;
-min-width: 10px;
-padding: 2px 5px;
-font-size: 11px;
-color: #fff;
-line-height: 1;
-font-weight: normal;
-vertical-align: baseline;
-white-space: nowrap;
-text-align: center;
-background-color: #999;
-border-radius: 10px;
-margin-left: 3px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 2px 5px !important;
+  font-size: 11px;
+  color: #fff !important;
+  line-height: 1;
+  font-weight: normal;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999;
+  border-radius: 10px;
+  margin-left: 3px;
 }
 
 .glyphicon-warning-sign{
@@ -1142,13 +1162,25 @@ span.Attribute{
 
 .Readonly{
   font-family: "Roboto-Regular";
-<<<<<<< HEAD
-  font-size: 13px;
-=======
   font-size: 14px;
->>>>>>> 9bf962765f7cb6c575e25d83f1889506cb28f127
-  color: #5F5F5F !important;
+  color: #5F5F5F;
   padding-right: 10px;
+}
+
+.PagingButtonsFirst{
+  margin-right: 16px;
+}
+
+.PagingButtonsPrevious{
+  margin-right: 8px;
+}
+
+.PagingButtonsNext{
+  margin-left: 8px;
+}
+
+.PagingButtonsLast{
+  margin-left: 16px;
 }
 
 /*================================================================GENEXUS OVERWRITE FIN===============================================================================*/
@@ -1183,27 +1215,29 @@ span.Attribute{
   margin: 0 auto;
 }
 
-#LOGIN_FORM .bienvenido,
-#LOGIN_FORM .iniciosesion{
+/*titulo principal del login*/
+#LOGIN_FORM .lTituloPrincipal{
   display: block;
   font-size: 24px;
   color: #46788f;
   font-family: "Roboto-Medium";
 }
 
-#LOGIN_FORM .nombreU,
-#LOGIN_FORM .otro{
+
+#LOGIN_FORM .nombreUsuario,
+#LOGIN_FORM .otroUsuario{
   display: block;
-  font-family: "Roboto-Medium";
 }
 
-#LOGIN_FORM .nombreU{
+/*nombre del usuario que se encuentra actualmente registrado en la cookie*/
+#LOGIN_FORM .nombreUsuario{
   font-size: 18px;
   color: #46788f;
   font-family: "Roboto-Medium";
 }
 
-#LOGIN_FORM .otro{
+/*vinculo para borrar la cookie e iniciar con otro usuario*/
+#LOGIN_FORM .otroUsuario{
   font-size: 14px;
   text-align: right;
   margin-top: -20px;
@@ -1212,7 +1246,7 @@ span.Attribute{
   font-family: "Roboto-Medium";
 }
 
-#LOGIN_FORM .otro a{
+#LOGIN_FORM .otroUsuario a{
   color: #6f9eb3;
   text-decoration: none;
 }
@@ -1298,7 +1332,8 @@ span.Attribute{
   border-left: 5px solid #fffaf2;
   position: relative;
   padding: 18px 0;
-  border-bottom: 1px solid #bfbfbf;
+  border-bottom: 1px solid #E0E0E0;
+  height: 70px;
   transition: all 1s ease;
 }
 
@@ -1308,9 +1343,9 @@ span.Attribute{
   border-left: 5px solid #38c789;
 }
 
-#LOGIN_FORM td .tdc{
-  background: inherit;
-  display: block;
+#LOGIN_FORM > #GrdseleccionarrolContainerDiv table{
+  width: 100%;
+  margin-top: 25px;
 }
 
 #LOGIN_FORM td span a{
@@ -1327,8 +1362,15 @@ span.Attribute{
   padding-top: 18px;
 }
 
-#Grid1ContainerTbl tr:last-child td{
+#GrdseleccionarrolContainerTbl tr:last-child td{
   border-bottom: none;
+}
+
+tfoot div{
+  padding-bottom: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 
 /*=============================================================BANDEJA PRINCIPAL=================================================================================*/
@@ -1565,3 +1607,4 @@ table.Grid{
   width: 100%;
   background: #fffaf2;
 }
+
