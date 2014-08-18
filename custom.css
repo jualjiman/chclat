@@ -1032,7 +1032,7 @@ div.gx-multimedia-upload input.Button:hover{
   text-transform: uppercase;
   box-shadow: none;
   font-family: "Roboto-Medium";
-  font-size: 14px;
+  font-size: 14px !important;
   margin: 0 auto;
   padding: 4px 12px;
   transition: background 1s ease, color 1s ease, border-color 1s ease;
@@ -1492,7 +1492,8 @@ tfoot div{
   width: 60%;
 }
 
-#FILTRO #vTRAMITETIPO{
+#FILTRO #vTRAMITETIPO, 
+#FILTRO #vADMINTRAMITETIPO{
   width: 60%;
   margin: 0 0 16px 0;
 }
@@ -1565,6 +1566,9 @@ tfoot div{
 #INSCRIPCION{
   background: #dedad3;
 }
+.btnFontSize{
+  font-size: 11px;
+}
 /*======================================PupUp solicutd=====================================*/
 .txtmail{
   height: 30px;
@@ -1612,6 +1616,12 @@ height: 10px;
 .ajustar{
   width: 45%;
 }
+.nolinea{
+  display: block;
+}
+.separacion{
+  margin-left: 100px;
+}
 .linea{
   display: inline-flex;
   display: -o-inline-flex;
@@ -1619,6 +1629,17 @@ height: 10px;
   display: -moz-inline-flex;
   display: -webkit-inline-flex;
 
+}
+.check{
+  display: inline-flex;
+  display: -o-inline-flex;
+  display: -ms-inline-flex;
+  display: -moz-inline-flex;
+  display: -webkit-inline-flex;
+
+}
+.separarCHK{
+  margin-left: 5px;
 }
 
 /*TEMPORAL*/
