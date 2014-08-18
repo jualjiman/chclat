@@ -276,6 +276,14 @@ strong{
   margin-bottom: 5px;
 }
 
+.nota-data-separador-wrapper {
+  margin: 10px 5px;
+}
+
+.nota-data-separador {
+  border-bottom: 1px solid #eee;
+}
+
 .Busqueda-Control-Radio > span {
   font-size: 14px;
   line-height: 1.428571429;
@@ -438,6 +446,61 @@ strong{
 
 .panel-group-inner {
   margin: 0 5px;
+}
+
+.panel-group-inner .panel-heading {
+ background-color: #f0f0f0;
+}
+
+.panel-body-inner {
+ padding: 5px;
+ background-color: #f7f7f7;
+}
+
+.panel-body-inner .result_cell {
+ background-color: #fff;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ margin-bottom: 15px;
+ border-left: 4px solid #5bc0de;
+ padding-left: 5px;
+}
+
+.panel-body-inner .result_cell.data-success {
+ border-left-color: #5bc0de;
+}
+
+.panel-body-inner .result_cell.data-warning {
+ border-left-color: #f0ad4e;
+}
+
+.panel-body-inner .result_cell.data-cancel {
+ border-left-color: #d9534f;
+}
+
+.panel-body-inner .result_cell.data-cancel, .panel-body-inner .result_cell.data-cancel strong, .panel-body-inner .result_cell.data-cancel footer, .panel-body-inner .result_cell.data-cancel .subtitle {
+ background-color: inherit;
+ color: #bfbfbf !important;
+}
+
+blockquote {
+ padding: 5px;
+ margin: 0 0 5px;
+ font-size: 17.5px;
+ border-left: 5px solid #eee;
+}
+
+.result_cell blockquote {
+ border-left: none;
+}
+
+.viewfolio-data .badge {
+  background-color: #7f7f7f !important;
+  color: #fff !important;
+}
+
+.sidebar-right .badge {
+background-color: #ccc;
 }
 
 /*=========================================================================================================CHICOS NUEVOS==================*/
@@ -686,6 +749,10 @@ select.selectPersonalizado{
   margin-top: 15px !important;
 }
 
+.separacionTopMin{
+  margin-top: 2px;
+}
+
 /*agrega un margen debajo del elemento, ideal cuando pega al ras de la parte de abajo*/
 .separacionDerecha{
   margin-right: 15px !important;
@@ -763,7 +830,7 @@ select.selectPersonalizado{
 }
 
 .enLinea{
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .centradoVertical{
@@ -801,6 +868,11 @@ hr.separador:last-child{
 
 .textoDerecha{
   text-align: right;
+}
+
+.textoAlerta{
+  font-weight: bold;
+  color: #fc6440 !important;
 }
 
 /*////////////////////////ESPECIFICAS//////////////////////////////*/
@@ -1036,7 +1108,8 @@ table.table-striped{
 }
 
 table.table-striped tbody tr td input,
-table.table-striped tbody tr td a img{
+table.table-striped tbody tr td a img,
+table.table-striped tbody tr td img{
   width: 20px !important;
   display: block;
   margin: 0 auto;
