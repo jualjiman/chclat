@@ -1569,6 +1569,9 @@ tfoot div{
 .btnFontSize{
   font-size: 11px;
 }
+.center{
+  text-align: center !important;
+}
 /*======================================PupUp solicutd=====================================*/
 .txtmail{
   height: 30px;
